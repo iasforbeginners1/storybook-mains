@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sikshak ki Kahaniyan</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f7f6;
+        }
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background: #2c3e50;
+            color: white;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .story-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 { margin: 0; font-size: 2.5em; }
+        .content { font-size: 1.2em; text-align: justify; }
+        .navigation {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .btn {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .btn:hover { background-color: #2980b9; }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Meri Kahaniyan</h1>
+    <p>Ek naya sikhne ka anubhav</p>
+</header>
+
+<div class="story-container">
+    <div class="content">
+        <!-- Aapki story ka content yahan aayega -->
+        <h2>Kahani ka Shirsak (Title)</h2>
+        <p>Yahan apni story ki pehli line likhen...</p>
+        <p>Aapne Gemini se jo story banayi hai, uske paragraphs ko yahan copy-paste kar sakte hain.</p>
+    </div>
+
+    <div class="navigation">
+        <a href="https://gemini.google.com/share/68ef4350b442" target="_blank" class="btn">Poori Kitab Dekhen</a>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Aapka Shikshan Sansthan</p>
+</footer>
+
+</body>
+</html>
