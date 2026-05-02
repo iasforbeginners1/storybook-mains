@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 May 2026 - Current Affairs Premium Test</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Hind', sans-serif;
+            background: radial-gradient(circle at top right, #4d1396, #1a0533, #0d021a);
+            color: white;
+            min-height: 100vh;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        /* Abstract Fluid Design from Template */
+        .fluid-wave {
+            position: fixed;
+            bottom: -15%;
+            right: -10%;
+            width: 100%;
+            height: 70%;
+            background: linear-gradient(135deg, rgba(255, 0, 255, 0.25), rgba(157, 80, 187, 0.35));
+            filter: blur(100px);
+            border-radius: 50%;
+            z-index: -1;
+            animation: drift 18s infinite alternate ease-in-out;
+        }
+
+        @keyframes drift {
+            from { transform: translate(0, 0) scale(1); }
+            to { transform: translate(-5%, -5%) scale(1.1) rotate(5deg); }
+        }
+
+        .glass-container {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 32px;
+        }
+
+        .node-card {
+            background: rgba(255, 255, 255, 0.08);
+            border-left: 6px solid #ff00ff;
+            border-radius: 20px;
+            padding: 1.5rem;
+            transition: 0.3s;
+        }
+
+        .input-box {
+            background: rgba(0, 0, 0, 0.5);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            color: white;
+            padding: 16px;
+            font-size: 1.25rem;
+            border-radius: 16px;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .input-box:focus {
+            outline: none;
+            border-color: #ff00ff;
+            box-shadow: 0 0 20px rgba(255, 0, 255, 0.3);
+        }
+
+        .timer-glow {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 8px 25px;
+            border-radius: 50px;
+            font-weight: 800;
+            border: 1px solid rgba(255, 0, 255, 0.3);
+            box-shadow: 0 0 15px rgba(255, 0, 255, 0.2);
+        }
+
+        @media (max-width: 640px) {
+            .mobile-title { font-size: 2.2rem; }
+            .input-box { font-size: 1.3rem; padding: 18px; }
+        }
+    </style>
+</head>
+<body class="p-4 md:p-12">
+    <div class="fluid-wave"></div>
+
+    <div class="max-w-7xl mx-auto">
+        <!-- Header -->
+        <header class="flex justify-between items-center mb-12">
+            <div class="text-3xl font-black italic tracking-tighter">IAS <span class="text-[#ff00ff]">PCS</span></div>
+            <div id="timerWrapper" class="timer-glow text-2xl">
+                <i class="fas fa-hourglass-start text-pink-500 mr-2"></i> <span id="clock">02:00</span>
+            </div>
+        </header>
+
+        <!-- Step 1: Study Mode (2 Minutes) -->
+        <div id="studyView">
+            <div class="text-center mb-16">
+                <h1 class="mobile-title text-5xl md:text-7xl font-bold mb-4">2 MAY <span class="text-pink-500 italic">CAPSULE</span></h1>
+                <p class="text-xl text-gray-400">सभी 12 बिंदुओं को याद करने के लिए आपके पास 2 मिनट हैं।</p>
+                <button onclick="triggerTest()" class="mt-8 bg-gradient-to-r from-pink-600 to-purple-600 text-white px-12 py-4 rounded-full font-bold text-xl shadow-lg hover:scale-105 transition">स्टार्ट टेस्ट</button>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="node-card">
+                    <h3 class="text-2xl font-bold text-pink-400 mb-4 italic">I. अंतर्राष्ट्रीय श्रम दिवस</h3>
+                    <p class="text-lg text-gray-300">1. थीम: स्वस्थ मनोसामाजिक वातावरण</p>
+                    <p class="text-lg text-gray-300">2. घटना: शिकागो का हेमार्केट मामला</p>
+                    <p class="text-lg text-gray-300">3. भारत: 1923, चेन्नई से शुरुआत</p>
+                </div>
+                <div class="node-card border-l-emerald-500">
+                    <h3 class="text-2xl font-bold text-emerald-400 mb-4 italic">II. PAI 2.0 इंडेक्स</h3>
+                    <p class="text-lg text-gray-300">4. जारीकर्ता: पंचायती राज मंत्रालय</p>
+                    <p class="text-lg text-gray-300">5. डेटा: 2.5 लाख पंचायतें</p>
+                    <p class="text-lg text-gray-300">6. UP: 51 'फ्रंट रनर' पंचायतें</p>
+                </div>
+                <div class="node-card border-l-blue-500">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-4 italic">III. UAE & OPEC निकास</h3>
+                    <p class="text-lg text-gray-300">7. कारण: उत्पादन क्षमता बढ़ाना</p>
+                    <p class="text-lg text-gray-300">8. बाधा: OPEC कोटा सिस्टम</p>
+                    <p class="text-lg text-gray-300">9. लाभ: भारत हेतु ऊर्जा सुरक्षा</p>
+                </div>
+                <div class="node-card border-l-orange-500">
+                    <h3 class="text-2xl font-bold text-orange-400 mb-4 italic">IV. BHISM क्यूब्स</h3>
+                    <p class="text-lg text-gray-300">10. प्रोजेक्ट: आरोग्य मैत्री परियोजना</p>
+                    <p class="text-lg text-gray-300">11. स्वरूप: विश्व का पहला पोर्टेबल अस्पताल</p>
+                    <p class="text-lg text-gray-300">12. क्षमता: 200 लोगों का त्वरित इलाज</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 2: Test Mode (12 Inputs) -->
+        <div id="testView" class="hidden">
+            <h2 class="text-4xl font-bold mb-10 text-center">रिक्त स्थान <span class="text-pink-500">भरें</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="glass-container p-8">
+                    <label class="text-pink-400 font-bold block mb-2">श्रम दिवस की थीम?</label>
+                    <input type="text" id="i1" class="input-box" placeholder="...">
+                    <label class="text-pink-400 font-bold block mt-6 mb-2">कौन सा 'मामला' (Chicago)?</label>
+                    <input type="text" id="i2" class="input-box" placeholder="...">
+                    <label class="text-pink-400 font-bold block mt-6 mb-2">भारत में शुरुआत वर्ष?</label>
+                    <input type="text" id="i3" class="input-box" placeholder="...">
+                </div>
+                <div class="glass-container p-8">
+                    <label class="text-emerald-400 font-bold block mb-2">PAI का मंत्रालय?</label>
+                    <input type="text" id="i4" class="input-box" placeholder="...">
+                    <label class="text-emerald-400 font-bold block mt-6 mb-2">कुल कितनी पंचायतें (लाख)?</label>
+                    <input type="text" id="i5" class="input-box" placeholder="...">
+                    <label class="text-emerald-400 font-bold block mt-6 mb-2">UP में फ्रंट रनर संख्या?</label>
+                    <input type="text" id="i6" class="input-box" placeholder="...">
+                </div>
+                <div class="glass-container p-8">
+                    <label class="text-blue-400 font-bold block mb-2">UAE क्यों बाहर हुआ (लक्ष्य)?</label>
+                    <input type="text" id="i7" class="input-box" placeholder="...">
+                    <label class="text-blue-400 font-bold block mt-6 mb-2">क्या सिस्टम रुकावट था?</label>
+                    <input type="text" id="i8" class="input-box" placeholder="...">
+                    <label class="text-blue-400 font-bold block mt-6 mb-2">भारत को क्या सुरक्षा मिलेगी?</label>
+                    <input type="text" id="i9" class="input-box" placeholder="...">
+                </div>
+                <div class="glass-container p-8">
+                    <label class="text-orange-400 font-bold block mb-2">BHISM किस प्रोजेक्ट का है?</label>
+                    <input type="text" id="i10" class="input-box" placeholder="...">
+                    <label class="text-orange-400 font-bold block mt-6 mb-2">यह असल में क्या है?</label>
+                    <input type="text" id="i11" class="input-box" placeholder="...">
+                    <label class="text-orange-400 font-bold block mt-6 mb-2">कितने लोगों की क्षमता?</label>
+                    <input type="text" id="i12" class="input-box" placeholder="...">
+                </div>
+            </div>
+            <div class="text-center mt-12 mb-24">
+                <button onclick="showScore()" class="bg-pink-600 text-white px-20 py-4 rounded-full font-bold text-2xl shadow-2xl">सबमिट टेस्ट</button>
+            </div>
+        </div>
+
+        <!-- Step 3: Leaderboard -->
+        <div id="resultView" class="hidden">
+            <div class="max-w-2xl mx-auto glass-container p-10 text-center border-2 border-pink-500/30">
+                <h2 class="text-3xl font-bold mb-4">फाइनल स्कोर</h2>
+                <div id="scoreLabel" class="text-9xl font-black text-pink-500 mb-6">0/12</div>
+                
+                <div id="saveForm">
+                    <input type="text" id="stuName" class="input-box text-center max-w-sm mx-auto mb-6" placeholder="अपना नाम लिखें">
+                    <button onclick="saveScore()" class="bg-emerald-600 text-white px-10 py-3 rounded-2xl font-bold text-xl">लीडरबोर्ड में रैंक देखें</button>
+                </div>
+            </div>
+
+            <div class="max-w-2xl mx-auto glass-container p-8 mt-10">
+                <h3 class="text-3xl font-bold text-center mb-8 text-pink-400 underline italic">🏆 ग्लोबल लीडरबोर्ड</h3>
+                <div id="board" class="space-y-3 italic text-gray-300">लोड हो रहा है...</div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, signInAnonymously, onAuthStateChanged, signInWithCustomToken } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import { getFirestore, collection, addDoc, onSnapshot } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+        const firebaseConfig = JSON.parse(__firebase_config);
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+        const appId = typeof __app_id !== 'undefined' ? __app_id : 'may2-final-p';
+
+        let user = null;
+        let finalScore = 0;
+
+        const authInit = async () => {
+            if (typeof __initial_auth_token !== 'undefined' && __initial_auth_token) {
+                await signInWithCustomToken(auth, __initial_auth_token);
+            } else {
+                await signInAnonymously(auth);
+            }
+        };
+        authInit();
+
+        onAuthStateChanged(auth, (u) => {
+            user = u;
+            if(u) syncBoard();
+        });
+
+        // 120 Seconds Timer
+        let time = 120;
+        const tick = setInterval(() => {
+            if(document.getElementById('studyView').style.display !== 'none') {
+                time--;
+                let m = Math.floor(time / 60);
+                let s = time % 60;
+                document.getElementById('clock').innerText = `${m.toString().padStart(2,'0')}:${s.toString().padStart(2,'0')}`;
+                if(time <= 0) {
+                    clearInterval(tick);
+                    triggerTest();
+                }
+            }
+        }, 1000);
+
+        window.triggerTest = () => {
+            clearInterval(tick);
+            document.getElementById('studyView').style.display = 'none';
+            document.getElementById('timerWrapper').style.display = 'none';
+            document.getElementById('testView').classList.remove('hidden');
+            window.scrollTo(0,0);
+        };
+
+        window.showScore = () => {
+            let s = 0;
+            const answers = {
+                i1: 'मनोसामाजिक', i2: 'हेमार्केट', i3: '1923',
+                i4: 'पंचायती राज', i5: '2.5', i6: '51',
+                i7: 'क्षमता', i8: 'कोटा', i9: 'ऊर्जा',
+                i10: 'मैत्री', i11: 'पोर्टेबल', i12: '200'
+            };
+
+            for(let k in answers) {
+                const v = document.getElementById(k).value.toLowerCase();
+                if(v.includes(answers[k].toLowerCase())) s++;
+            }
+
+            finalScore = s;
+            document.getElementById('testView').classList.add('hidden');
+            document.getElementById('resultView').classList.remove('hidden');
+            document.getElementById('scoreLabel').innerText = `${finalScore}/12`;
+            window.scrollTo(0,0);
+        };
+
+        window.saveScore = async () => {
+            const name = document.getElementById('stuName').value.trim();
+            if(!name || !user) return alert("नाम लिखें!");
+            await addDoc(collection(db, 'artifacts', appId, 'public', 'data', 'daily_ranks'), {
+                name, score: finalScore, timestamp: Date.now()
+            });
+            document.getElementById('saveForm').innerHTML = "<p class='text-emerald-400 font-bold'>रैंक अपडेट हो गई!</p>";
+        };
+
+        function syncBoard() {
+            onSnapshot(collection(db, 'artifacts', appId, 'public', 'data', 'daily_ranks'), (snap) => {
+                const list = [];
+                snap.forEach(d => list.push(d.data()));
+                list.sort((a,b) => b.score - a.score || b.timestamp - a.timestamp);
+                document.getElementById('board').innerHTML = list.slice(0, 10).map((r, i) => `
+                    <div class="flex justify-between items-center p-4 rounded-2xl ${i < 3 ? 'bg-pink-500/20 border border-pink-500/40' : 'bg-white/5'}">
+                        <span class="font-bold">#${i+1} ${r.name}</span>
+                        <span class="text-pink-400 font-black text-xl">${r.score}/12</span>
+                    </div>
+                `).join('') || "<p class='text-center text-gray-500'>अभी कोई रिकॉर्ड नहीं है।</p>";
+            });
+        }
+    </script>
+</body>
+</html>
